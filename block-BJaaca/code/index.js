@@ -34,26 +34,70 @@ character.title = "Lady of Winterfell";
 
 // - Add another property named `greet` and value should be a function when called should alert `I am [NAME HERE] and my title is [TITLE HERE]`.
 
+character.title = "Lady of Winterfell";
+
+character["Character Name"] = "Arya";
+
+character.greet = function () {
+    alert(`I am ${character.characterName} and my title is ${character.title}.`);
+  };
+  character.greet();
+
 // - Add a new property to the character object named `isFemale` and value will be `true`
+
+character.isFemale = true;
 
 // - Execute the function stored in the greet key of the character object
 
+character.greet();
+
 //  - Change the method `greet` to now alert `She is [NAME HERE] and her title is [TITLE HERE]`.
+
+character.title = "Lady of Winterfell";
+
+character["Character Name"] = "Arya";
+
+character.greet = function () {
+    alert(`She is ${character.characterName} and my title is ${character.title}.`);
+  };
+  character.greet();
 
 // - Check by calling `greet` and see if the message changed or not.
 
+character.greet();
+
 //  - Add a new property in the character object `isAdult`. The value will be true if age is greater than 18 or it will be false.
 
+character.age =24;
+//  output 24
+
+character.isAdult = character.age > 18 ? true : false;
+// output true
+
 // - Add a new method (function inside objects are called methods) named `changeIsAdult`. When called should be able to flip the value of `isAdult` from true to false and false to true.
+
+character.changeIsAdult = function(){
+    return character.isAdult = !character.isAdult ;
+
+}
 
 // - Add a new key with the name stored in variable `keyName` defined below i.e `playedBy` (use [] for computed property) and the value of "Maisie Williams"
 
 let keyName = 'playedBy';
 
+character["keyName"] = "Maisie Williams";
+
 // - Using `alert` alert the value stored in key you added above `keyName` use the variable name to access
+
+alert(character.keyName);
 
 // - Using the function `console.log` log the value of the key `42`. You don't have to add the key
 
+console.log(character["42"]);
+//undefined
+
 // - Add a new key named `totalSeasons` with the value of `1 + 2 + 3 + 2`. Use this expression
+
+character.totalSeasons = `1 + 2 + 3 + 2`;
 
 // - Access the value of the key `totalSeason` (it should be 8)
