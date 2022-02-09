@@ -1,20 +1,39 @@
 // 1. Declare an empty array and store it in a variable.
+let fastfood = [];
 
 // 2. Now check the type of empty array you declared above.
+typeof fastfood; // 'object'
 
 // 3. Create an array named `colors` that contains five different names of colors as strings.
 
+let colors = ["Red","Green","Yellow","Blue","Orange"];
+for(let i = 0; i < colors.length;i++){
+    console.log(colors[i]);
+}
+
+
 // 4. Access the first color in the array and print it to the console using `console.log()`
 
+console.log(colors[0]);
+
 // 5. Access the third color in the array and print it to the console using `console.log()`
+console.log(colors[2]);
 
 // 6. Access the last color in the array and print it to the console using `console.log()`
 
+console.log(colors[4]);
+
 // 7. Write one line of code that changes the value of the first color in the list to "black" (overwriting the previous value).
+
+colors[1] = "black";
 
 // 8. Write one line of code that changes the value of the last color in the list to "ultraviolet" (overwriting the previous value).
 
+colors[4] = "ultraviolet";
+
 // 9. Now, Find the length of the array named `colors`.
+
+colors.length;
 
 // 10. Create a new variable called fourthColor and set it equal to the fourth color in the list.
 
